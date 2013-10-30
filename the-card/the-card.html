@@ -12,6 +12,13 @@
     }
   </style>
   <script>
-    Polymer('the-card');
+    Polymer('the-card', {
+      enteredView: function () {
+        this.fire('show', this);
+      },
+      leftView: function () {
+        this.fire('hide', this);
+      }
+    });
   </script>
 </polymer-element>
