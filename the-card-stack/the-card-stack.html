@@ -2,14 +2,14 @@
   <script>
     Polymer('the-card-stack', {
       enteredView: function () {
-        this.observe();
+        this.observeChanges();
       },
       leftView: function () {
         if (this.observer) {
           this.observer.disconnect();
         }
       },
-      observe: function () {
+      observeChanges: function () {
         this.observer = new MutationObserver(this.updateVisibility.bind(this));
         this.observer.observe(this, {
           subtree: false,
