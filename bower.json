@@ -7,7 +7,7 @@
   "description": "Polymer components for UI cards",
   "license": "MIT",
   "dependencies": {
-    "polymer": "0.2.2"
+    "polymer": "~0.2.3"
   },
   "ignore": [
     "**/.*",
