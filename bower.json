@@ -7,7 +7,13 @@
   "description": "Polymer components for UI cards",
   "license": "MIT",
   "dependencies": {
-    "polymer": "0.4.0"
+    "polymer": "noflo/polymer#0.4.0-lockdeps",
+    "core-component-page": "noflo/core-component-page#0.4.0-lockdeps"
+  },
+  "resolutions": {
+    "polymer": "0.4.0-lockdeps",
+    "core-component-page": "0.4.0-lockdeps",
+    "platform": "0.4.0"
   },
   "ignore": [
     "**/.*",
